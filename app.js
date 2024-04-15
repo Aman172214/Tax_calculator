@@ -59,8 +59,10 @@ function calculateTax(grossIncome, extraIncome, deductions, ageGroup) {
     }
   }
 
+  totalAmountAfterTax = totalIncome - taxAmount
+
   // Display the tax amount in the dialog
-  taxAmountElement.textContent = taxAmount.toFixed(2);
+  taxAmountElement.textContent = totalAmountAfterTax.toFixed(2);
 }
 
 // Validate form fields before calculating tax
