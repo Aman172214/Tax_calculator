@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  max-width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control select {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control select:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control .question {
+  font-size: small;
+  padding: 0px 6px;
+  color: #777;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-control .warning {
+  visibility: hidden;
+  font-size: small;
+  padding: 0px 7px;
+  color: #777;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 39px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.form-control .tooltip {
+  display: none;
+  position: absolute;
+  background-color: #8e44ad;
+  color: white;
+  font-size: x-small;
+  width: 100px;
+  min-height: fit-content;
+  border-radius: 2px;
+  padding: 5px;
+  bottom: 100%;
+}
+
+.form-control .warning + .tooltip {
+  position: absolute;
+  top: 1%;
+  left: 100%;
+}
+
+.form-control .question:hover + .tooltip,
+.form-control .warning:hover + .tooltip {
+  display: inline-block;
+}
+
+.form .calc-btn {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+dialog {
+  position: fixed;
+  left: 575px;
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  border: none;
+  font-size: large;
+}
+
+dialog button {
+  margin-left: auto;
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}

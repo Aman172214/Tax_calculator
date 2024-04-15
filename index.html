@@ -3,11 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
     <title>Task Calculator</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="header"><h2>Tax Calculator</h2></div>
+      <div class="form">
+        <div class="form-control">
+          <label for="gross-annual-income"
+            >Enter gross annual income <span class="question">?</span
+            ><span class="tooltip">
+              Gross annual income is your total salary in a year before any
+              deductions
+            </span></label
+          >
+
+          <input
+            type="text"
+            id="gross-annual-income"
+            placeholder="Enter gross annual income"
+          />
+          <span class="warning">!</span>
+          <span class="tooltip"> Please enter amount in numbers </span>
+        </div>
+        <div class="form-control">
+          <label for="extra-income"
+            >Enter extra income <span class="question">?</span
+            ><span class="tooltip">
+              Extra income is your earning other than your regular salary
+            </span></label
+          >
+
+          <input
+            type="text"
+            id="extra-income"
+            placeholder="Enter extra income from other sources"
+          />
+          <span class="warning">!</span>
+          <span class="tooltip"> Please enter amount in numbers </span>
+        </div>
+        <div class="form-control">
+          <label for="age-group">Enter age group</label>
+          <select name="age-group" id="age-group">
+            <option value="">--select--</option>
+            <option value="<40">&lt; 40</option>
+            <option value=">=40 & <60">&ge; 40 & &lt; 60</option>
+            <option value=">=60">&ge; 60</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="total-deductions"
+            >Enter total applicable deductions <span class="question">?</span
+            ><span class="tooltip">
+              Deductions in salary refer to reductions made from gross pay
+              before calculating the net pay
+            </span></label
+          >
+
+          <input
+            type="text"
+            id="total-deductions"
+            placeholder="Add total applicable deductions"
+          />
+          <span class="warning">!</span>
+          <span class="tooltip"> Please enter amount in numbers </span>
+        </div>
+        <button class="calc-btn">Calculate</button>
+      </div>
+      <dialog>
+        <p>Your overall income will be</p>
+        <strong> <p id="tax"></p></strong>
+        <p>after tax deduction</p>
+        <button>Close</button>
+      </dialog>
+    </div>
   </body>
 </html>
